@@ -5,7 +5,7 @@
     "main": "lib/index.js",
     "repository": {
       "type": "git",
-      "url": "https://gitlab.com/ayana/core.git"
+      "url": "https://gitlab.com/GhostStorm/Core.git"
     },
     "author": "_112",
     "dependencies": {
