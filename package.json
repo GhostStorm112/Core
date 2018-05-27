@@ -1,0 +1,15 @@
+{
+    "name": "ghost-core",
+    "version": "0.0.1",
+    "description": "Ghost core library",
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://gitlab.com/ayana/core.git"
+    },
+    "author": "_112",
+    "dependencies": {
+      "winston": "^3.0.0-rc6"
+    },
+  }
+  
