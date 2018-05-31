@@ -10,7 +10,8 @@
     "author": "_112",
     "dependencies": {
       "winston": "^3.0.0-rc5",
-      "lavaqueue": "^0.4.1"
+      "lavalink": "^0.7.2",
+      "lavaqueue": "^0.4.1"\
     }
   }
   
