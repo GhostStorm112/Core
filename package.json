@@ -1,6 +1,6 @@
 {
     "name": "ghost-core",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "Ghost core library",
     "main": "lib/index.js",
     "repository": {
