@@ -2,10 +2,10 @@
     "name": "ghost-core",
     "version": "0.0.4",
     "description": "Ghost core library",
-    "main": "lib/index.js",
+    "main": "src/index.js",
     "repository": {
       "type": "git",
-      "url": "https://gitlab.com/GhostStorm/Core.git"
+      "url": "git+https://gitlab.com/GhostStorm/Core.git"
     },
     "author": "_112",
     "dependencies": {
