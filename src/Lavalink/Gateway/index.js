@@ -26,7 +26,7 @@ class LavalinkGateway extends Lavaqueue {
       for (const player of players) {
         shardNum = parseInt(idToBinary(player.guild_id).slice(0, -22), 2) % shards
         if (player.channel_id) {
-          await this.channel.sendToQueue('weather-gateway-requests', Buffer.from(JSON.stringify({
+          await this.channel.sendToQueue({
             t: 'VOICE_STATE_UPDATE',
             d: {
               shard_id: shardNum,
@@ -35,8 +35,8 @@ class LavalinkGateway extends Lavaqueue {
               self_mute: false,
               self_deaf: false
             }
-          })))
-          await this.channel.sendToQueue('weather-gateway-requests', Buffer.from(JSON.stringify({
+          })
+          await this.channel.sendToQueue({
             t: 'VOICE_STATE_UPDATE',
             d: {
               shard_id: shardNum,
@@ -45,8 +45,8 @@ class LavalinkGateway extends Lavaqueue {
               self_mute: false,
               self_deaf: false
             }
-          })))
-          await this.channel.sendToQueue('weather-gateway-requests', Buffer.from(JSON.stringify({
+          })
+          await this.channel.sendToQueue({
             t: 'VOICE_STATE_UPDATE',
             d: {
               shard_id: shardNum,
@@ -55,7 +55,7 @@ class LavalinkGateway extends Lavaqueue {
               self_mute: false,
               self_deaf: false
             }
-          })))
+          })
         }
       }
       await this.queues.start()
