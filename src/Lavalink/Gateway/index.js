@@ -24,6 +24,7 @@ class LavalinkGateway extends Lavaqueue {
     if (players) {
       let shardNum
       for (const player of players) {
+          console.log('RECOVER' + player.channel_id)
         shardNum = parseInt(idToBinary(player.guild_id).slice(0, -22), 2) % shards || 0
         if (player.channel_id) {
           await this.channel.sendToQueue({
