@@ -24,28 +24,8 @@ class LavalinkGateway extends Lavaqueue {
     if (players) {
       let shardNum
       for (const player of players) {
-        shardNum = parseInt(idToBinary(player.guild_id).slice(0, -22), 2) % shards
+        shardNum = parseInt(idToBinary(player.guild_id).slice(0, -22), 2) % shards || 0
         if (player.channel_id) {
-          await this.channel.sendToQueue({
-            t: 'VOICE_STATE_UPDATE',
-            d: {
-              shard_id: shardNum,
-              guild_id: player.guild_id,
-              channel_id: player.channel_id,
-              self_mute: false,
-              self_deaf: false
-            }
-          })
-          await this.channel.sendToQueue({
-            t: 'VOICE_STATE_UPDATE',
-            d: {
-              shard_id: shardNum,
-              guild_id: player.guild_id,
-              channel_id: null,
-              self_mute: false,
-              self_deaf: false
-            }
-          })
           await this.channel.sendToQueue({
             t: 'VOICE_STATE_UPDATE',
             d: {
