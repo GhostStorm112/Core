@@ -1,7 +1,6 @@
 'use strict'
 
 const { Client: Lavaqueue } = require('lavaqueue')
-const idToBinary = require('../../Utils/').idToBinary
 
 class LavalinkGateway extends Lavaqueue {
   constructor (options = {}) {
@@ -19,9 +18,6 @@ class LavalinkGateway extends Lavaqueue {
     this.redis = options.redis
   }
 
-  async recover (shards) {
-    console.log(shards)
-  }
   async skip (guildId) {
     await this.queues.get(guildId).next()
   }
