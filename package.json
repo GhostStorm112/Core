@@ -12,6 +12,7 @@
       "test": "eslint ."
     },
     "dependencies": {
+      "lavalink": "^2.2.2",
       "lavaqueue": "^2.0.1",
       "winston": "^3.1.0"
     },
