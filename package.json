@@ -1,30 +1,29 @@
 {
-    "name": "ghost-core",
-    "version": "0.0.4",
-    "description": "Ghost core library",
-    "main": "src/index.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://gitlab.com/GhostStorm/Core.git"
-    },
-    "author": "_112",
-    "scripts": {
-      "test": "eslint ."
-    },
-    "dependencies": {
-      "lavalink": "^2.2.2",
-      "lavaqueue": "^2.0.1",
-      "winston": "^3.1.0"
-    },
-    "devDependencies": {
-      "dotenv": "^6.0.0",
-      "eslint": "^5.3.0",
-      "eslint-plugin-import": "^2.8.0",
-      "eslint-plugin-node": "^6.0.0",
-      "eslint-plugin-promise": "^3.6.0",
-      "eslint-plugin-standard": "^3.0.1",
-      "eslint-config-node": "^4.0.0",
-      "eslint-config-standard": "^12.0.0"
-    }
+  "name": "ghost-core",
+  "version": "0.0.4",
+  "description": "Ghost core library",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/GhostStorm/Core.git"
+  },
+  "author": "_112",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "dependencies": {
+    "lavalink": "^2.2.2",
+    "lavaqueue": "^2.0.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-standard": "^12.0.0"
   }
-  
+}

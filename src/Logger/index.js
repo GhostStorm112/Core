@@ -66,6 +66,9 @@ class Logger {
     this.transports.set(name, transport)
   }
 
+  profile(name){
+    return this.logger.profile(name)
+  }
   log (type, msg, metadata) {
     return this.logger.log(type, msg, metadata)
   }
