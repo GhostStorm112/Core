@@ -20,7 +20,7 @@ class LavalinkWorker extends Lavaqueue {
   }
 
   async send (event) {
-    return this.gateway.sendWS(event.shard_id, event.t, event.d)
+    return this.gateway.sendWS(event.gateway, event.t, event.d)
   }
 }
 module.exports = LavalinkWorker
